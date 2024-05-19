@@ -55,11 +55,18 @@
     </section>
 
     <!-- Seção "Contato" -->
-    <section id="contato" style="background-color: #000080; color: #ffffff;"> <!-- Cor de fundo e texto da seção -->
-        <h2>Contato</h2>
-        <p>Fone/whatsapp: (47) 98883-1898</p>
-        <p>E-mail: <a href="mailto:rogerlimanex@gmail.com" style="color: #ffffff;">rogerlimanex@gmail.com</a></p>
-    </section>
+<section id="contato" style="background-color: #000080; color: #ffffff;"> <!-- Cor de fundo e texto da seção -->
+    <h2>Contato</h2>
+    <form action="mailto:rogerlimanex@gmail.com" method="post" enctype="text/plain">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br>
+        <input type="submit" value="Enviar">
+    </form>
+</section>
 
     <footer style="background-color: #008800; text-align: center; color: #ffffff;"> <!-- Cor de fundo e texto do rodapé -->
         <p>&copy; 2024 Meu Portfólio</p>
